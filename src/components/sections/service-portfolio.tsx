@@ -70,7 +70,7 @@ export function ServicePortfolio() {
     <section id="services" ref={ref} className={cn("py-16 sm:py-24 bg-secondary opacity-0", isIntersecting && "animate-fade-in-up")}>
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">What we do</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-medium">What we do</h2>
           <p className="font-body text-lg md:text-xl mt-4 text-muted-foreground">
             Solving Supply Chain for Sodium-ion Battery
           </p>
@@ -89,7 +89,7 @@ export function ServicePortfolio() {
                 />
               </div>
               <div>
-                <h3 className="font-headline text-xl font-bold">{service.title}</h3>
+                <h3 className="font-headline text-xl font-medium">{service.title}</h3>
                 <p className="font-body text-muted-foreground mt-1">{service.description}</p>
               </div>
             </div>

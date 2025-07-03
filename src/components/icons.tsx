@@ -1,3 +1,4 @@
+import * as React from "react";
 import type { SVGProps } from "react";
 
 export function MoleculeIcon(props: SVGProps<SVGSVGElement>) {
@@ -32,33 +33,45 @@ export function SodiumIonIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 100 100" 
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes orbit {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        .shell-1 { animation: orbit 8s linear infinite alternate; transform-origin: center center; }
+        .shell-2 { animation: orbit 12s linear infinite alternate-reverse; transform-origin: center center; }
+        .shell-3 { animation: orbit 16s linear infinite alternate; transform-origin: center center; }
+      `}} />
+      
       {/* Nucleus */}
-      <circle cx="50" cy="50" r="10" fill="hsl(var(--primary))" />
+      <circle cx="50" cy="50" r="10" fill="black" />
 
+      {/* Orbits (static lines) */}
+      <circle cx="50" cy="50" r="20" stroke="black" strokeOpacity="0.3" strokeWidth="1" fill="none" />
+      <circle cx="50" cy="50" r="35" stroke="black" strokeOpacity="0.3" strokeWidth="1" fill="none" />
+      <circle cx="50" cy="50" r="48" stroke="black" strokeOpacity="0.3" strokeWidth="1" fill="none" />
+      
       {/* Shell 1: 2 electrons */}
-      <g>
-        <circle cx="50" cy="50" r="20" stroke="hsl(var(--primary))" strokeWidth="2" fill="none" strokeDasharray="2" />
-        <circle cx="50" cy="30" r="4" fill="hsl(var(--primary))" />
-        <circle cx="50" cy="70" r="4" fill="hsl(var(--primary))" />
+      <g className="shell-1">
+        <circle cx="50" cy="30" r="3" fill="black" />
+        <circle cx="50" cy="70" r="3" fill="black" />
       </g>
 
       {/* Shell 2: 8 electrons */}
-      <g>
-        <circle cx="50" cy="50" r="35" stroke="hsl(var(--primary))" strokeWidth="2" fill="none" />
-        <circle cx="50" cy="15" r="4" fill="hsl(var(--primary))" />
-        <circle cx="85" cy="50" r="4" fill="hsl(var(--primary))" />
-        <circle cx="50" cy="85" r="4" fill="hsl(var(--primary))" />
-        <circle cx="15" cy="50" r="4" fill="hsl(var(--primary))" />
-        <circle cx="74.75" cy="25.25" r="4" fill="hsl(var(--primary))" />
-        <circle cx="74.75" cy="74.75" r="4" fill="hsl(var(--primary))" />
-        <circle cx="25.25" cy="74.75" r="4" fill="hsl(var(--primary))" />
-        <circle cx="25.25" cy="25.25" r="4" fill="hsl(var(--primary))" />
+      <g className="shell-2">
+        <circle cx="50" cy="15" r="3" fill="black" />
+        <circle cx="85" cy="50" r="3" fill="black" />
+        <circle cx="50" cy="85" r="3" fill="black" />
+        <circle cx="15" cy="50" r="3" fill="black" />
+        <circle cx="74.75" cy="25.25" r="3" fill="black" />
+        <circle cx="74.75" cy="74.75" r="3" fill="black" />
+        <circle cx="25.25" cy="74.75" r="3" fill="black" />
+        <circle cx="25.25" cy="25.25" r="3" fill="black" />
       </g>
 
       {/* Shell 3: 1 electron */}
-      <g>
-        <circle cx="50" cy="50" r="48" stroke="hsl(var(--primary))" strokeWidth="2" fill="none" strokeDasharray="4" />
-        <circle cx="98" cy="50" r="4" fill="hsl(var(--primary))" />
+      <g className="shell-3">
+        <circle cx="98" cy="50" r="3" fill="black" />
       </g>
     </svg>
   );

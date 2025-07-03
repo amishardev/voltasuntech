@@ -18,7 +18,7 @@ export function ContactSection() {
         <div className="max-w-3xl mx-auto">
           <Card className="shadow-lg">
             <CardHeader className="text-center">
-              <CardTitle className="font-headline text-4xl md:text-5xl font-bold">Get In Touch</CardTitle>
+              <CardTitle className="font-headline text-4xl md:text-5xl font-medium">Get In Touch</CardTitle>
               <CardDescription className="font-body text-lg md:text-xl max-w-2xl mx-auto pt-2">
                 Have a question or a project in mind? We&apos;d love to hear from you.
               </CardDescription>

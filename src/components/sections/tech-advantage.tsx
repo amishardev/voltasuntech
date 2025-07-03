@@ -3,12 +3,18 @@
 import { useState, useEffect, useRef } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
-import { Globe, Zap, Recycle, ShieldCheck } from "lucide-react";
+import { Factory, Globe, Zap, Recycle } from "lucide-react";
 import { SodiumIonIcon } from "@/components/icons";
 import { useOnScreen } from "@/hooks/use-on-screen";
 import { cn } from "@/lib/utils";
 
 const advantages = [
+  {
+    value: "made-in-india",
+    title: "100% Made in India",
+    icon: Factory,
+    description: "We’re proudly building a 100% Made-in-India Sodium-ion Battery Ecosystem—backed by deep scientific expertise and a strong focus on localization. Our initial focus is on stationary energy storage systems, with future expansions into mobility and grid applications."
+  },
   {
     value: "abundance",
     title: "Material Abundance",
@@ -26,12 +32,6 @@ const advantages = [
     title: "Extended Cycle Life",
     icon: Recycle,
     description: "With a robust crystalline structure, our batteries offer exceptional cycle stability, delivering thousands of charge-discharge cycles with minimal capacity degradation. This ensures a long-lasting and reliable power source for any application."
-  },
-  {
-    value: "safety",
-    title: "Enhanced Safety",
-    icon: ShieldCheck,
-    description: "Sodium-Ion chemistry is inherently safer, with a lower risk of thermal runaway compared to many lithium-ion counterparts. Our batteries can be fully discharged to zero volts, making transportation and storage significantly safer."
   }
 ];
 
@@ -60,7 +60,7 @@ export function TechAdvantage() {
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl md:text-5xl font-bold">The Sodium-Ion Advantage</h2>
           <p className="font-body text-lg md:text-xl max-w-3xl mx-auto mt-4 text-muted-foreground">
-            Discover why our 100% Made-in-India Sodium-Ion technology is the future of energy storage.
+            VoltAsun Technologies is a next-generation energy storage startup focused on the manufacturing of Battery Active Materials, Cells, and providing end-to-end R&D, scale-up, and consultancy services for the battery ecosystem.
           </p>
         </div>
         

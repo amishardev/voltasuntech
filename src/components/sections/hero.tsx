@@ -63,13 +63,13 @@ export function HeroSection() {
         unoptimized
       />
       <div className="absolute inset-0 bg-black/50 -z-10" />
-      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-        <div className="text-left">
-          <h1 className="font-headline text-5xl md:text-7xl font-medium leading-tight mb-6 animate-fade-in-down">
-            Shaping Tomorrow's Energy with Smart Solutions
+      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative bottom-[10%]">
+        <div className="text-left relative top-[5%]">
+          <h1 className="font-headline text-5xl md:text-6xl font-medium leading-tight mb-6 animate-fade-in-down">
+            Accelerating ACC Battery Materials Manufacturing & Adoption
           </h1>
           <p className="font-body text-lg md:text-xl max-w-2xl mb-10 animate-fade-in-up">
-            Offering safe, integrable, sustainable electrical energy storage technology. Minimizing the use of critical raw materials.
+            A Global Shift in Energy Storage with Safe, Sustainable, Scalable, Earth Abundant Battery Materials
           </p>
           <div className="flex gap-4">
             <Button size="lg" asChild className="rounded-full bg-white text-black hover:bg-neutral-200">
@@ -81,7 +81,7 @@ export function HeroSection() {
           </div>
         </div>
         <div 
-          className="hidden md:flex justify-center items-center md:self-start -mt-28"
+          className="hidden md:flex justify-center items-center"
           style={style}
         >
             <Image

@@ -14,7 +14,7 @@ export function LocationSection() {
     <section id="location" ref={ref} className={cn("py-16 sm:py-24 bg-secondary opacity-0", isIntersecting && "animate-fade-in-up")}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Find Us</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-medium">Find Us</h2>
           <p className="font-body text-lg md:text-xl max-w-3xl mx-auto mt-4 text-muted-foreground">
             Come visit us at our registered office.
           </p>
@@ -41,7 +41,7 @@ export function LocationSection() {
                     <div className="flex items-start gap-4">
                         <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                         <div>
-                            <h3 className="font-semibold text-lg font-headline">Registered Office</h3>
+                            <h3 className="font-medium text-lg font-headline">Registered Office</h3>
                             <p className="text-muted-foreground font-body">
                                 1606, PH1, Jaypee Wishtown, Sector-128<br />
                                 Noida, UP, India
@@ -51,14 +51,14 @@ export function LocationSection() {
                     <div className="flex items-start gap-4">
                         <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                         <div>
-                            <h3 className="font-semibold text-lg font-headline">Mobile</h3>
+                            <h3 className="font-medium text-lg font-headline">Mobile</h3>
                             <a href="tel:+919958159054" className="text-muted-foreground font-body hover:text-primary transition-colors">+91 9958159054</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
                         <Globe className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                         <div>
-                            <h3 className="font-semibold text-lg font-headline">Website</h3>
+                            <h3 className="font-medium text-lg font-headline">Website</h3>
                             <a href="https://www.voltasuntech.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground font-body hover:text-primary transition-colors">www.voltasuntech.com</a>
                         </div>
                     </div>

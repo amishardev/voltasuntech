@@ -23,7 +23,7 @@ export function MissionVision() {
             </CardHeader>
             <CardContent>
               <p className="font-body text-lg text-muted-foreground">
-                To accelerate the adoption of sustainable energy solutions by developing and manufacturing high-performance, cost-effective, and safe Sodium-Ion batteries, empowering a greener future for India and the world.
+                To be a global leader in sustainable energy storage by leveraging earth-abundant, locally sourced materials to deliver safe, affordable, and high-performance battery solutions.
               </p>
             </CardContent>
           </Card>
@@ -36,7 +36,7 @@ export function MissionVision() {
             </CardHeader>
             <CardContent>
               <p className="font-body text-lg text-muted-foreground">
-                To be a global leader in Sodium-Ion battery technology and establish India as a hub for advanced energy storage solutions, driving towards a future of complete energy independence and sustainability.
+                To accelerate the production and global adoption of Sodium-ion technology, driving India’s energy independence with a 100% Made-in-India solution.
               </p>
             </CardContent>
           </Card>

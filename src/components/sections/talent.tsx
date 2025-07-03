@@ -14,7 +14,7 @@ export function TalentSection() {
     return (
         <section id="talent" ref={ref} className={cn("py-16 sm:py-24 bg-secondary opacity-0", isIntersecting && "animate-fade-in-up")}>
             <div className="container mx-auto px-4 text-center">
-                <h2 className="font-headline text-4xl md:text-5xl font-bold">Get in Touch with VoltAsun</h2>
+                <h2 className="font-headline text-4xl md:text-5xl font-medium">Get in Touch with VoltAsun</h2>
                 <p className="font-body text-lg md:text-xl max-w-3xl mx-auto mt-4 text-muted-foreground">
                     Have questions about VoltAsun’s battery technology or energy solutions? Reach out — we&apos;re here to help you power the future, one innovation at a time
                 </p>
