@@ -55,7 +55,7 @@ export function HeroSection() {
       className="relative w-full h-[90vh] min-h-[700px] flex items-center text-white overflow-hidden"
     >
       <Image
-        src="https://raw.githubusercontent.com/amishardev/voltasuntechweb/main/rvsmshodiorkfetkdbja.png"
+        src="https://github.com/amishardev/voltasuntechweb/blob/main/ChatGPT%20Image%20Jul%208,%202025,%2003_36_55%20PM.png?raw=true"
         alt="Abstract background of energy technology"
         data-ai-hint="energy technology"
         fill
